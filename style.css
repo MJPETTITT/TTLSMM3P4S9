@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+	background-color: #043963;
+	background-image: url("images/bg.png");
+	background-repeat: no-repeat;
+	background-size:cover;
+	text-align: center;
+	font-family: 'Open sans', sans-serif;
+	color: white;
+	padding: 100px 0px;
+	font-size: 12pt;
+}
+
+p {
+	font-weight: 400;
+	font-size: 1em;
+	text-align: left;
+	line-height: 1.5;
+}
+
+.paragraph {
+	padding: 1em;
+	margin: 1em 0;
+	background-color: #082135;
+}
+
+.title {
+	font-weight: 700;
+	font-size: 1.5em;
+	text-align: left;
+	margin: 40px;
+	line-height: 1.5;
+}
+
+.accordion-container {
+	  width: 100%;
+	max-width: 1036px;
+	text-align: center;
+	margin: auto; /*this centers*/
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  background-color: #082135;
+  color: #fff;
+  cursor: pointer;
+	margin: 4px;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+	font-weight: 700;
+	font-size: 17px;
+}
+
+.accordion.active {
+	color: #ffc700;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) 
+.active, .accordion:hover {
+  background-color: #ccc;
+}*/
+
+/* Style the accordion panel. Note: hidden by default */
+.panel {
+  /*padding: 0 18px;*/
+  background-color: #082135;
+  overflow: hidden;
+	color: white;
+	text-align: left;
+	font-size: 17px;
+	font-weight: 300;
+}
+
+.unhidden {
+	visibility: visible;
+	opacity: 100;
+margin: 8px 4px;
+	height:auto;
+	padding: 18px;
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+	height: 0;
+	padding: 0px;
+	margin: 0px 4px;
+}
+
+.unhidden, .hidden {
+		transition: visibility 0.5s, opacity 0.5s, height 0.3s, padding 0.3s ease-out;
+}
+
+.accordion {
+	padding: 18px;
+
+}
+
+.accordion-right {
+	float: right;
+}
+
+.panel-fit {
+	width: 100%;
+}
+
+.highcharts-series-4 > path {
+	fill: blue !important;
+}
+
+.image-container {
+	text-align: center;
+}
